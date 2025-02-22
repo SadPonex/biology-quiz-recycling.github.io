@@ -1,0 +1,164 @@
+/* Общие стили */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #2e7d32; /* Темно-зеленый фон */
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  background-color: rgba(255, 255, 255, 0.1); /* Полупрозрачный фон контейнера */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ffffff; /* Белый цвет заголовка */
+}
+
+button {
+  background-color: #4caf50; /* Зеленый цвет кнопок */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px;
+  transition: background-color 0.3s ease; /* Плавный переход цвета */
+}
+
+button:hover {
+  background-color: #45a049; /* Темнее при наведении */
+}
+
+#start-screen {
+  margin-top: 20px;
+}
+
+#quiz-screen img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+#answer-buttons button {
+  display: block;
+  width: 100%;
+  margin: 5px 0;
+  transition: background-color 0.3s ease; /* Плавный переход цвета */
+}
+
+/* Стили для кнопок с выбранным ответом */
+.answer-btn.selected {
+  background-color: #3e8e41; /* Темно-зеленый */
+  color: white;
+}
+
+/* Стили для кнопок по умолчанию */
+.answer-btn {
+  background-color: #4caf50; /* Зеленый */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+/* Стиль для кнопки "Следующий вопрос" */
+#next-button {
+  background-color: #28a745; /* Ярко-зеленый */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  display: block; /* Всегда видима */
+  width: 100%; /* Занимает всю ширину контейнера */
+  transition: background-color 0.3s ease; /* Плавный переход цвета */
+}
+
+#next-button:hover {
+  background-color: #218838; /* Темнее при наведении */
+}
+/* Стиль для экрана результатов */
+#result-screen {
+  margin-top: 20px;
+}
+/* Стиль для текста вопроса */
+#question-text {
+  font-size: 1.5rem; /* Увеличенный размер шрифта */
+  margin-bottom: 20px;
+  line-height: 1.4; /* Для лучшей читаемости */
+}
+
+#score-text {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+#restart-button {
+  background-color: #ff9800; /* Оранжевый */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#restart-button:hover {
+  background-color: #e68300; /* Темнее при наведении */
+}
+
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+
+  #answer-buttons button {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+
+  #next-button {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+}

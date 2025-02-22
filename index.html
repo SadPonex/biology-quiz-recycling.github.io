@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Викторина по переработке мусора</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+  <header>
+    <h1>Викторина по переработке мусора</h1>
+  </header>
+
+  <!-- Главная страница -->
+  <section id="start-screen">
+    <button id="start-button">Пройти викторину</button>
+  </section>
+
+  <!-- Секция с вопросами -->
+  <section id="quiz-screen" style="display: none;">
+    <div id="question-container">
+      <img id="question-image" src="" alt="Иллюстрация к вопросу">
+      <p id="question-text"></p>
+    </div>
+    <div id="answer-buttons" class="btn-grid"></div>
+    <button id="next-button">Следующий вопрос</button> <!-- Кнопка только здесь -->
+  </section>
+
+  <!-- Результаты -->
+  <section id="result-screen" style="display: none;">
+    <p>Вы набрали <span id="score-text"></span>% правильных ответов!</p>
+    <button id="restart-button">Начать заново</button>
+  </section>
+</div>
+
+   
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
